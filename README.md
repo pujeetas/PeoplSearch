@@ -1,16 +1,33 @@
-# React + Vite
+🧑‍💻 Users Component – Fetch & Filter Data
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+📌 Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The Users Component is a React project that:
+Fetches a list of users from the API: JSONPlaceholder Users
+Displays users in a table with:
+Name
+Email
+City (from address.city)
+Includes a live search input to filter users by name as you type.
+Shows a loading spinner while fetching data.
+Displays “No users found” if the filter returns no results.
 
-## React Compiler
+✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+✅ Fetch users using fetch API
+✅ Display data in a responsive table
+✅ Live search with case-insensitive filtering
+✅ Conditional rendering:
 
-## Expanding the ESLint configuration
+Loader during fetch
+“No users found” message
+✅ Clean and minimal UI with optional Tailwind CSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🛠️ Technologies Used
+
+React
+JavaScript (ES6+)
+CSS / Tailwind CSS
+JSONPlaceholder API
+react-loader-spinner for loader
